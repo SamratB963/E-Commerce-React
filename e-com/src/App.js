@@ -9,6 +9,7 @@ import { GlobalStyle } from './pages/GlobalStyle';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import SingleProduct from './pages/SingleProduct';
+import Header from './components/Header';
 
 function App() {
   const theme = {
@@ -34,6 +35,7 @@ function App() {
     <ThemeProvider theme = {theme}>
       <BrowserRouter>
       <GlobalStyle />
+      <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path ="/about" element = {<About />} />
